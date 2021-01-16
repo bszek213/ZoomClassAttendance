@@ -1,7 +1,10 @@
 # Attendance Code via Zoom logs
 
-##Run makefile
-
+## Run makefile
+```bash
+workingDir$ make
+ workingDir$ ./mainClass
+```
 ## Usage
 change these lines to your file locations:
 
