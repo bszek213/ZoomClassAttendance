@@ -3,7 +3,7 @@
 #include <string>
 #include <filesystem>
 #include <sstream> 
-#include "student.h"
+//#include "student.h"
 #include "stringContainer.h"
 namespace fs = std::filesystem;
 int main()
@@ -49,7 +49,7 @@ int main()
         /* Run for loop for all names per file */
         for (int i = 0; i < arraySize; i++)
         {
-            int count = 0;
+            //int count = 0;
             /* Read data from folder path */
             auto lol = entry.path();
             std::cout << entry.path() << std::endl;
@@ -79,7 +79,7 @@ int main()
             }
 
             fin.close();
-            count= 0;
+            //count= 0;
         }
 
         //Close file to write to it
@@ -89,7 +89,6 @@ int main()
         ++numfiles;
     }
     /* NOW OPEN THE OUTPUT FILE AND SUM FOR EVERY TIME A NAME IS PRESENT AND THEN RESAVE */
-
     cout << numfiles << endl;
     return 0;
 }

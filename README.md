@@ -10,12 +10,12 @@ change these lines to your file locations:
 
 ```cpp
 
-11 std::string nameFileLoc = "/home/bszekely/Desktop/attendance_code/Names.txt";
-12 std::string inputZoomLogsLoc = "/home/bszekely/Desktop/attendance_code/Zoom_Attendance_Logs/";
-72 string fullName = "/home/bszekely/Desktop/attendance_code/txtfiles/"
+11 std::string nameFileLoc = "/home/bszekely/Desktop/attendance_code/Names.txt"; //Your list of students' first and last name as how they show up in the zoom logs
+12 std::string inputZoomLogsLoc = "/home/bszekely/Desktop/attendance_code/Zoom_Attendance_Logs/"; //list of zoom .csv files
+72 string fullName = "/home/bszekely/Desktop/attendance_code/txtfiles/"; //output location for the txt files of students' names
 
 ```
-The main function (mainClass.cpp) uses the container (stringContainer.h) that stores each students'
+The main function (mainClass.cpp) uses a stack container (stringContainer.h) that stores each students'
 data: Name, time, and date (if available) every time a new file is read in.
 
 ```cpp
